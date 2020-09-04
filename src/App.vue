@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <AboutMe />
+    <Skills />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/layout/Header';
+import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header, AboutMe, Skills
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+font-family: "Varela Round", sans-serif;
 }
 </style>
