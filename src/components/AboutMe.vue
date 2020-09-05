@@ -1,10 +1,8 @@
 <template>
     <div class="about">
-        <div class="background-image"></div>
         <div class="content">
-            <h1>About Me</h1>  
-        <h3>Hi! My name is Darya, and I'm a fresh university graduate 
-            looking for a front-end internship.</h3>
+            <h1>{{ $t("message.aboutme") }}</h1>  
+        <h3>{{ $t("message.aboutmedetails") }}</h3>
         </div>
     </div>
 </template>
@@ -28,6 +26,6 @@ export default {
     }
     h3 {
         text-align: center;
-        font-weight: 400;
+        font-weight: 600;
     }
 </style>

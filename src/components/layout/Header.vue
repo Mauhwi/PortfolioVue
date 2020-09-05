@@ -1,12 +1,20 @@
 <template>
   <header class="header">
+    <div class="localeselector">
+      <select v-model="$i18n.locale">
+      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
+    </select>
+    </div>
     <nav class="stroke">
       <ul>
         <li>
-          <a href="#">About Me</a>
+          <a href="#">{{ $t("message.aboutme") }}</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#">{{ $t("message.skills") }}</a>
+        </li>
+        <li>
+          <a href="#">Education</a>
         </li>
         <li>
           <a href="#">Contacts</a>
@@ -22,14 +30,29 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return { langs: ['EN', 'RU'] }
+  }
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
 header {
-  font-family: "Varela Round", sans-serif;
   background: #1c1d22;
+  position: relative;
+}
+
+.localeselector select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1c1d22;
+  color: #aaa;
+}
+
+.localeselector option {
+  background: #1c1d22;
+  color: #aaa;
 }
 
 html {

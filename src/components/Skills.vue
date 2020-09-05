@@ -1,31 +1,40 @@
 <template>
   <div class="skills">
-    <h1>Skills</h1>
+    <h1>{{ $t("message.skills") }}</h1>
     <div class="skills-nav center stroke">
       <ul>
         <li>
-          <a
+          <h3
             class="front-end"
             v-bind:class="{ active: frontIsActive }"
             v-on:click="markActive(); toggleContent()"
-          >Front-end</a>
+          >Front-end</h3>
         </li>
         <li>
-          <a
+          <h3
             class="back-end"
             v-bind:class="{ active: backIsActive }"
             v-on:click="markActive(); toggleContent()"
-          >Back-end</a>
+          >Back-end</h3>
         </li>
       </ul>
     </div>
-    <p id="frontend">
-      Hi! My name is Darya, and I'm a fresh university graduate
-      looking for a front-end internship.
-    </p>
-    <p id="backend">
-      Hi! My name is Yoshikage Kira, I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink.
-    </p>
+    <div id="frontend" class="container">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <div class="vl"></div>
+      <p>{{ $t("message.frontendtext") }}</p>
+    </div>
+    <div id="backend" style="display: none" class="container">
+      <ul>
+        <li>Java</li>
+      </ul>
+      <div class="vl"></div>   
+      <p>{{ $t("message.backendtext") }}</p>
+    </div>
   </div>
 </template>
 
@@ -47,10 +56,12 @@ export default {
       var x = document.getElementById("frontend");
       var y = document.getElementById("backend");
       if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
+        x.style.justifyContent="center";
         y.style.display = "none";
       } else {
-        y.style.display = "block";
+        y.style.display = "flex";
+        y.style.justifyContent="center";
         x.style.display = "none";
       }
     },
@@ -66,7 +77,25 @@ export default {
   padding-inline-start: 0;
 }
 
-a {
+.container {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  color: #aaa;
+  align-self: center;
+  padding-right: 20px;
+}
+
+.item {
+  flex: 1 1;
+}
+
+h3 {
   flex: 1 1;
   padding: 10px;
   text-decoration: none;
@@ -85,10 +114,10 @@ h1 {
   color: #aaa;
 }
 p {
-  padding: 20px;
-  flex: 80%;
   text-align: center;
   color: #aaa;
+  max-width: 600px;
+  padding: 0 20px;
 }
 
 .active {
@@ -96,5 +125,11 @@ p {
   pointer-events: none;
   cursor: default;
   text-decoration: underline;
+}
+
+.vl {
+  padding: 0, 4px;
+  border-left: 1px solid #aaa;
+  width: 1px;
 }
 </style>
