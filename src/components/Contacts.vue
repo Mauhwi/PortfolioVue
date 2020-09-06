@@ -60,7 +60,4 @@ export default {
     .flex-row {
         display: flex;
     }
-    .hh-link {
-
-    }
 </style>
