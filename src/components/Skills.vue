@@ -89,11 +89,9 @@ export default {
   color: #aaa;
   align-self: center;
   padding-right: 20px;
+  font-size: 18px;
 }
 
-.item {
-  flex: 1 1;
-}
 
 h3 {
   flex: 1 1;
@@ -114,6 +112,7 @@ h1 {
   color: #aaa;
 }
 p {
+  font-size: 18px;
   text-align: center;
   color: #aaa;
   max-width: 600px;

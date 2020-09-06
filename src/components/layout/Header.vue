@@ -14,13 +14,10 @@
           <a href="#">{{ $t("message.skills") }}</a>
         </li>
         <li>
-          <a href="#">Education</a>
+          <a href="#">{{ $t("message.education") }}</a>
         </li>
         <li>
-          <a href="#">Contacts</a>
-        </li>
-        <li>
-          <a href="#">My Cat</a>
+          <a href="#">{{ $t("message.contacts") }}</a>
         </li>
       </ul>
     </nav>
@@ -76,39 +73,12 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 15px;
-  text-decoration: none;
   color: #aaa;
   font-weight: 800;
-  text-transform: uppercase;
   margin: 0 10px;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all 0.5s;
-}
+
 nav ul li a:hover {
   color: rgb(160, 81, 81);
-}
-
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: rgb(160, 81, 81);
-  height: 1px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
 }
 </style>
