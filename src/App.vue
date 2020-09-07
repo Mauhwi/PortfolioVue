@@ -64,4 +64,10 @@ a:after {
 a:hover:after {
   width: 100%;
 }
+
+@media screen and (max-width: 320px) {
+    .education-container {
+    min-width: 320px;
+  }
+}
 </style>

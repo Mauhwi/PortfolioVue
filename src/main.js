@@ -13,6 +13,7 @@ const messages = {
       skills: 'Навыки',
       frontendtext: 'Знание основных языков разметки, а также нескольких библиотек и фреймворков: Bootstrap, jQuery, Vue.js',
       backendtext: 'В ходе обучения разработаны проекты с использованием Spring, Hibernate, MySQL и Thymeleaf, а так же дипломный Android-проект, использующий библиотеки архитектурных компонентов: Room, ViewModel, LiveData и СУБД SQLite.',
+      github: 'Репозиторий проектов',
       
       education: 'Образование',
       university: 'ЮУрГУ',
@@ -33,6 +34,7 @@ const messages = {
       skills: 'Skills',
       frontendtext: 'Knowledge of core web technologies as well as some of the popular libraries and frameworks: Bootstrap, jQuery, Vue.js',     
       backendtext: 'My coding projects include projects that use Spring, Hibernate and Thymeleaf with MySQL database, as well as graduation project for Android, developed with the use of architecture component libraries: Room, ViewModel, LiveData and SQLite database.',
+      github: 'Github repository',
       
       education: 'Education',    
       university: 'South Ural State University',

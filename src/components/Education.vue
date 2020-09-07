@@ -44,5 +44,17 @@ export default {
 
     }
 
+    @media screen and (min-width: 900px) {
+        .education-container {
+        max-width: 600px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .education-container {
+        max-width: 320px;
+        }
+    }
+
     
 </style>
