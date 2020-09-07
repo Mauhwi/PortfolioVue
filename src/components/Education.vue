@@ -52,6 +52,7 @@ export default {
 
     @media screen and (max-width: 320px) {
         .education-container {
+        min-width: 320px;
         max-width: 320px;
         }
     }

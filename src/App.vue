@@ -67,6 +67,7 @@ a:hover:after {
 
 @media screen and (max-width: 320px) {
     html, body {
+    min-width: 320px;
     max-width: 320px;
   }
 }
