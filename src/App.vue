@@ -72,7 +72,7 @@ a:hover:after {
   and (orientation: portrait) {
     html, body {
     min-width: 320px;
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 </style>
