@@ -64,6 +64,7 @@ nav {
 }
 
 nav ul {
+  padding-inline-start: 0;
   list-style: none;
   text-align: center;
 }
