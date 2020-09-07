@@ -1,5 +1,5 @@
 <template>
-    <div class="education">
+    <div class="education" id="education">
         <div class="content">
             <h1>{{ $t("message.education") }}</h1> 
             <div class="education-container">

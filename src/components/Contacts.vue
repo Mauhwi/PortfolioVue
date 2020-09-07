@@ -1,5 +1,5 @@
 <template>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="content">
             <h1>{{ $t("message.contacts") }}</h1>
             <div class="contact-info"> 
@@ -12,7 +12,7 @@
                     <p>darmit074@gmail.com</p>  
                 </div> 
             </div>
-            <p class="hh-link"><a href="https://chelyabinsk.hh.ru/resume/871754d9ff084767c90039ed1f367556504578">{{ $t("message.headhunter") }}</a></p>
+            <p><a href="https://chelyabinsk.hh.ru/resume/871754d9ff084767c90039ed1f367556504578" target="_blank">{{ $t("message.headhunter") }}</a></p>
         </div>
     </div>
 </template>

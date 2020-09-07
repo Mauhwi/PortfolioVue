@@ -1,5 +1,5 @@
 <template>
-  <div class="skills">
+  <div class="skills" id="skills">
     <h1>{{ $t("message.skills") }}</h1>
     <div class="skills-nav center stroke">
       <ul>
@@ -35,6 +35,7 @@
       <div class="vl"></div>   
       <p>{{ $t("message.backendtext") }}</p>
     </div>
+    <p class="githublink"><a href="https://github.com/Mauhwi" target="_blank">{{$t("message.github")}}</a></p>
   </div>
 </template>
 
@@ -104,10 +105,13 @@ h3 {
 }
 
 .skills {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   background: #1c1d22;
 }
-h1 {
+h1, .githublink {
   text-align: center;
   color: #aaa;
 }

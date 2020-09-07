@@ -22,7 +22,7 @@ const messages = {
 
       contacts: 'Контакты',
       city: 'Россия, г. Челябинск. Возможен переезд в Новосибирск, а также удаленный формат работы.',
-      headhunter: 'Моё резюме на HeadHunter!',
+      headhunter: 'Моё резюме на HeadHunter',
     }
   },
   EN: {
@@ -43,7 +43,7 @@ const messages = {
 
       contacts: 'Contacts',      
       city: 'Chelyabinsk, Russia. Able to move to Novosibirsk or to work remotely.',
-      headhunter: 'My resume on HeadHunter!',
+      headhunter: 'My resume on HeadHunter',
 
     }
   }

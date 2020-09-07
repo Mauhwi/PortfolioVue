@@ -8,16 +8,16 @@
     <nav class="stroke">
       <ul>
         <li>
-          <a href="#">{{ $t("message.aboutme") }}</a>
+          <a href="#aboutme">{{ $t("message.aboutme") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("message.skills") }}</a>
+          <a href="#skills">{{ $t("message.skills") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("message.education") }}</a>
+          <a href="#education">{{ $t("message.education") }}</a>
         </li>
         <li>
-          <a href="#">{{ $t("message.contacts") }}</a>
+          <a href="#contacts">{{ $t("message.contacts") }}</a>
         </li>
       </ul>
     </nav>
