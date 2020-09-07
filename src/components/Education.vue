@@ -25,7 +25,7 @@ export default {
     .education-container {
         padding: 18px 0;
         margin: auto;
-        width: 400px;
+        max-width: 400px;
         align-self: center;
     }
     h1 {
