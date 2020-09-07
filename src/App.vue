@@ -66,8 +66,8 @@ a:hover:after {
 }
 
 @media screen and (max-width: 320px) {
-    .education-container {
-    min-width: 320px;
+    html, body {
+    max-width: 320px;
   }
 }
 </style>
